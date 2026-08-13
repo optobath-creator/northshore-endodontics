@@ -13,7 +13,7 @@ function ContactLink({ children = 'Contact us now' }) { return <a className="btn
 
 function App() {
   return <div className="site">
-    <div className="top"><div className="container top-in"><span>Northbrook's dedicated endodontic practice</span><span className="top-phone"><Phone size={14} /> (847) 480-1578</span></div></div>
+    <div className="top"><div className="container top-in"><span>Northbrook's dedicated endodontic practice</span><a className="top-phone" href="tel:+18474801578" aria-label="Call North Shore Endodontics at (847) 480-1578"><Phone size={14} /> (847) 480-1578</a></div></div>
     <header><div className="container head-in"><div className="brand" aria-label="North Shore Endodontics"><img src="/assets/northshore-logo.webp" alt="North Shore Endodontics" /><span className="header-label">Specialty care for lasting comfort</span></div></div></header>
     <main id="top">
       <section className="hero"><div className="container hero-in"><div><p className="eyebrow light">Specialized care. Lasting confidence.</p><h1>Keep your natural smile <em>healthy.</em></h1><p className="lead">Expert endodontic care with a calm, personal approach—so you can get back to the moments that make you smile.</p><div className="actions"><a className="btn white" href="#contact">Contact us now <ArrowRight size={17} /></a><a href="#services" className="link light">Explore our services <ArrowRight size={16} /></a></div><div className="note"><ShieldCheck size={18} /> Proudly serving Northbrook and the North Shore</div></div><aside><small>A thoughtful next step</small><p>“You deserve to understand your care and feel comfortable with the plan.”</p><b /></aside></div></section>
