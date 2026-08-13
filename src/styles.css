@@ -57,7 +57,7 @@ header .brand { flex-direction: column; align-items: flex-start; gap: var(--spac
 .hero { position: relative; isolation: isolate; min-height: 660px; overflow: hidden; background: var(--deep); color: #fff; }
 .hero::after { position: absolute; z-index: -1; inset: 0; content: ""; background: linear-gradient(90deg, rgb(18 61 69 / 93%), rgb(18 61 69 / 64%) 54%, rgb(18 61 69 / 24%)); }
 .hero-image { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.hero-in { position: relative; min-height: 660px; display: grid; grid-template-columns: 1.2fr .8fr; align-items: center; }
+.hero-in { position: relative; min-height: 660px; display: flex; align-items: center; }
 .eyebrow { display: block; color: var(--gold); font-size: 12px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
 .light { color: #fff; }
 h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; letter-spacing: -.045em; }
@@ -67,10 +67,7 @@ h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; lette
 .link { display: inline-flex; align-items: center; gap: var(--space-2); color: var(--teal); font-size: 15px; font-weight: 800; transition: color var(--transition-fast) var(--ease); }
 .link:hover { color: var(--gold); }
 .note { display: flex; align-items: center; gap: var(--space-2); margin-top: var(--space-6); color: #d6e7e7; font-size: 15px; }
-.hero aside { justify-self: end; max-width: 330px; padding: var(--space-6); border: 1px solid rgb(255 255 255 / 32%); border-radius: var(--radius); background: rgb(255 255 255 / 8%); backdrop-filter: blur(5px); }
-.hero aside small, .address small, .doc small { color: #e8c99f; font-size: 10px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
-.hero aside p { margin: var(--space-4) 0; font-family: Georgia, "Times New Roman", serif; font-size: 25px; font-style: italic; line-height: 1.3; }
-.hero aside b { display: block; width: 55px; height: 1px; background: #dfb27b; }
+.address small, .doc small { color: #e8c99f; font-size: 10px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
 
 h2 { margin: var(--space-5) 0; font-size: clamp(42px, 4.7vw, 62px); line-height: 1.1; }
 .intro > div, .services-intro { display: grid; grid-template-columns: 1fr 1fr; gap: calc(var(--space-8) + var(--space-7)); align-items: end; }
@@ -176,7 +173,6 @@ footer { margin-top: var(--space-8); background: #0d3037; color: #9db5b5; font-s
   .hero-in > div { max-width: 700px; }
   .hero h1 { font-size: clamp(52px, 11vw, 74px); }
   .lead { font-size: 19px; }
-  .hero aside { display: none; }
   .intro > div, .services-intro, .visit-in, .contact-in { grid-template-columns: 1fr; gap: var(--space-7); }
   .section { padding-block: calc(var(--space-8) + var(--space-6)); }
   .heading { display: block; }
