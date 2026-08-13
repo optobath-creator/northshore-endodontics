@@ -93,7 +93,7 @@ h2 { margin: 20px 0; font-size: clamp(42px, 4.7vw, 62px); line-height: 1.1; }
 .visit-expectations { display: flex; align-items: center; justify-content: space-between; gap: 38px; margin-bottom: 22px; padding: 28px 32px; border-left: 3px solid var(--gold); background: #fff; }
 .visit-expectations h3 { margin: 10px 0; font-size: 34px; line-height: 1.1; }
 .visit-expectations p { max-width: 680px; margin: 0; color: #5d7273; font-size: 16px; line-height: 1.55; }
-.resource-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.resource-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .resource-cards > a { display: flex; min-height: 260px; flex-direction: column; padding: 32px; background: #fff; transition: transform .2s, box-shadow .2s; }
 .resource-cards > a:hover { transform: translateY(-3px); box-shadow: 0 14px 28px rgb(23 58 66 / 10%); }
 .resource-cards span { color: var(--gold); font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
