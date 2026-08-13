@@ -52,10 +52,8 @@ h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; lette
 .hero aside b { display: block; width: 55px; height: 1px; background: #dfb27b; }
 
 .trust { background: #fff; border-bottom: 1px solid var(--line); }
-.trust-in { min-height: 138px; display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; }
-.trust-in > div { display: flex; align-items: center; gap: 15px; padding-left: 28px; border-right: 1px solid var(--line); }
-.trust-in > div:first-child { padding-left: 0; }
-.trust-in > div:last-child { border-right: 0; }
+.trust-in { min-height: 112px; display: flex; align-items: center; justify-content: center; }
+.trust-in > div { display: flex; align-items: center; gap: 15px; }
 .trust-in b { color: var(--teal); font-family: Georgia, "Times New Roman", serif; font-size: 38px; font-weight: 500; }
 .trust-in span { color: #607c7e; font-size: 13px; font-weight: 700; letter-spacing: .08em; line-height: 1.4; text-transform: uppercase; }
 
@@ -165,8 +163,7 @@ footer { background: #0d3037; color: #9db5b5; font-size: 13px; }
   .hero h1 { font-size: clamp(52px, 11vw, 74px); }
   .lead { font-size: 19px; }
   .hero aside { display: none; }
-  .trust-in { grid-template-columns: 1fr 1fr; gap: 22px; padding: 24px 0; }
-  .trust-in > div { padding: 0 !important; border: 0; }
+  .trust-in { min-height: 96px; }
   .intro > div, .services-intro, .doctors, .visit-in, .contact-in { grid-template-columns: 1fr; gap: 38px; }
   .section { padding-block: 96px; }
   .heading { display: block; }
@@ -200,7 +197,6 @@ footer { background: #0d3037; color: #9db5b5; font-size: 13px; }
   .lead { font-size: 18px; }
   .actions { align-items: flex-start; flex-direction: column; gap: 18px; }
   .note { margin-top: 30px; }
-  .trust-in { grid-template-columns: 1fr; }
   .section { padding-block: 82px; }
   h2 { font-size: 43px; }
   .services-intro { gap: 10px; }
